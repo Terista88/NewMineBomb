@@ -2,9 +2,11 @@ import discord
 from discord.ext import commands
 import hashlib
 import random
+intents = discord.Intents.default()
+intents.members = True
 
 # Create a bot instance
-bot = commands.Bot(command_prefix="!")
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Command: Predict mines
 @bot.command()
@@ -34,5 +36,5 @@ async def predict(ctx, mines: str, server_seed: str):
         await ctx.send(f"Error: {str(e)}")
 
 # Run the bot (replace with your actual bot token)
-bot.run("MTIzODM0OTYyNjk1NzEwMzIzNA.GkjL-K.cJnWTB8h-_97BvAzMLdUA7oB8uhRI7E77H-c_I")
+bot.run("MTIzODM0OTYyNjk1NzEwMzIzNA.GJlDRD.CuIXAu256fzLUj-FGieofspcT4SHaXXbta8pOw")
         
