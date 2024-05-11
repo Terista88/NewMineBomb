@@ -34,5 +34,5 @@ async def predict(ctx, mines: str, server_seed: str):
         await ctx.send(f"Error: {str(e)}")
 
 # Run the bot (replace with your actual bot token)
-bot.run("MTIzODQ3OTE2MjczNDQxMTg1OA.GQhydM.-QlJ4f2KqgDP-iNT4bWSUcd2JUrO4hcLuo2rcE")
+bot.run("MTIzODM0OTYyNjk1NzEwMzIzNA.GkjL-K.cJnWTB8h-_97BvAzMLdUA7oB8uhRI7E77H-c_I")
         
